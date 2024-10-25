@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAHRENHEIT CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div id="converter" style="border-width: 2px; border-style: solid; border-color: black;">
+
+            <h1>Celsius To Fahrenheit Calculator</h1>
+
+
+            <div class="inputdiv">
+
+                <input type="text" id="input" placeholder=" enter a number" style="border: none;">
+
+            </div>
+<br>
+            <div>
+
+                <button type="submit" onclick="convert()" id="submit" >submit</button>
+            </div>
+<br>
+
+
+            <div id="result">
+                <strong><p1>result</p1>
+                </strong>
+                
+            </div>
+        
+
+        </div>
+
+        <script>
+            function convert(){
+           const  clvalue=Number(document.getElementById("input").value)
+           const fahrenvalue= clvalue*9/5+32
+           const result= document.getElementById("result")
+           result.innerHTML= fahrenvalue.toFixed(2)+ " fahrenheit"//.tofixed(2) for get the value with two decimal point only
+        }
+        </script>
+
+
+
+
+
+
+
+
+    </center>
+</body>
+
+</html>
